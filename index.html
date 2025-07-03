@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climaneitor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title">CLIMANEITOR</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ciudad</th>
+                            <th scope="col">Clima</th>
+                            <th scope="col">Temperatura</th>
+                            <th scope="col">Sensación térmica</th>
+                            <th scope="col">Temp. (max)</th>
+                            <th scope="col">Temp. (min)</th>
+                            <th scope="col">Vel. viento</th>
+                            <th scope="col">Dir. viento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" id="ciudad"></th>
+                            <td id="clima"></td>
+                            <td id="temp"></td>
+                            <td id="sensacion_t"></td>
+                            <td id="temp_max"></td>
+                            <td id="temp_min"></td>
+                            <td id="vel_viento"></td>
+                            <td id="dir_viento"></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="seleccionarCiudad">
+                <p>Escribe la ciudad de la cual deseas consultar el clima</p>
+                <input type="text" id="opcionSeleccion" placeholder="Escribe la ciudad">
+                <button id="btnEnviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./appClima.js"></script>
+</body>
+</html>
