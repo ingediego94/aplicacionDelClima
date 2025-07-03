@@ -4,21 +4,29 @@ let city = "";
 
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
-  const boton = document.getElementById('btnEnviar');
+  const form = document.getElementById('formulario');
   const input = document.getElementById('opcionSeleccion');
 
-
-  boton.addEventListener('click', () => {
+  form.addEventListener('submit', (evento) => {
+    evento.preventDefault()
     const valorInput = input.value; // Capturamos el valor del input
     console.log("Texto ingresado:", valorInput);
     
     city = valorInput;
-    console.log('Variable con valor capturado:', city);
+    console.log('Variable con valor capturado:', city)
     
     clima();
+  })
+
+  // boton.addEventListener('click', () => {
+  //   const valorInput = input.value; // Capturamos el valor del input
+  //   console.log("Texto ingresado:", valorInput);
+  //   city = valorInput;
+  //   console.log('Variable con valor capturado:', city);
+  // });
 
   });
-});
+
 
 
 
