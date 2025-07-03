@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('formulario');
   const input = document.getElementById('opcionSeleccion');
 
+
   form.addEventListener('submit', (evento) => {
     evento.preventDefault()
     const valorInput = input.value; // Capturamos el valor del input
@@ -18,13 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     clima();
   })
 
+  // Otra forma de capturar los datos del imput:
   // boton.addEventListener('click', () => {
   //   const valorInput = input.value; // Capturamos el valor del input
   //   console.log("Texto ingresado:", valorInput);
   //   city = valorInput;
   //   console.log('Variable con valor capturado:', city);
   // });
-
+  // clima();
+  
   });
 
 
